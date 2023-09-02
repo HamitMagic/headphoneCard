@@ -21,6 +21,7 @@ export default function CardItem({card}: {card: Icard}) {
 
     function changeColor(event: React.MouseEvent, color: string) {
         event.preventDefault();
+        if (color === selected) return null;
         setSelected(color)
         console.log(`тут запрос на бэк чтоб получить другую картинку \n чтоб показать как выглядят ${color} наушники`)
     }
