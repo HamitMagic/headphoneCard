@@ -1,12 +1,12 @@
 import styles from './svgImage.module.scss'
 
-function SvgImage({fill, alt, stroke, callback}: {fill: string, alt: string, stroke: string, callback: (event: React.MouseEvent, color: string) => void}) {
+function SvgImage({fill, alt, selected, callback}: {fill: string, alt: string, selected: string, callback: (event: React.MouseEvent, color: string) => void}) {
     return (
         <div title={alt} onClick={(event) => callback(event, alt)}>
-            <svg className={`${styles.svg} ${stroke === "#000" ? styles.svgBlackStroke : styles.svgWhiteStroke}` } xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <svg className={`${styles.svg} ${selected === alt ? styles.svgBlackStroke : styles.svgWhiteStroke}` } xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <g filter="url(#filter0_d_2_14)">
                     <circle cx="24" cy="24" r="20" fill={fill} />
-                    <circle cx="24" cy="24" r="18" stroke={stroke} stroke-width="4"/>
+                    <circle cx="24" cy="24" r="18" stroke="none" stroke-width="4"/>
                 </g>
                 <defs>
                     <filter id="filter0_d_2_14" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

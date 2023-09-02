@@ -6,8 +6,8 @@
     "link": "/",
     "src": "/img/headphones.png",
     "colors": [
-        {"color": "#E44", "name": "red", "stroke": "#000"},
-        {"color": "#3C81F6", "name": "blue", "stroke": "#FFF"},
-        {"color": "#000", "name": "black", "stroke": "#FFF"}
+        {"color": "#E44", "name": "red"},
+        {"color": "#3C81F6", "name": "blue"},
+        {"color": "#000", "name": "black"}
     ]
 }

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
-import CardItem from './CardItem'
+import CardItem from '../components/CardItem'
 import data from '../assets/data.json'
 
 
