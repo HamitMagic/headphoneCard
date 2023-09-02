@@ -1,0 +1,101 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    height: $spacing-838;
+    flex-shrink: 0;
+    width: $spacing-400;
+    border: 1px solid #E7E6EB;
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+    padding: $spacing-40;
+    font-family: Roboto;
+
+    .image {
+        width: 258px;
+        height: 258px;
+        margin-left: $spacing-auto;
+        margin-right: $spacing-auto;
+
+    }
+    
+    .colorSelect {
+        margin-top: $spacing-24;
+        color: #666;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .colors {
+        margin-top: $spacing-16;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 16px;
+        
+        & div {
+            cursor: pointer;
+        }
+    }
+
+    .price {
+        margin-top: $spacing-24;
+        color: #333;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .name {
+        margin-top: $spacing-16;
+        color: #333;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .description {
+        margin-top: $spacing-8;
+        width: 320px;
+        height: 68px;
+        flex-shrink: 0;
+        color: #333;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .buttons {
+        margin-top: $spacing-32;
+        margin-bottom: $spacing-32;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 16px;
+        // width: 100%;
+
+        .button {
+            width: 100%;
+            height: 55px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            border: 1px solid #61A5FA;
+            color: #333;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            cursor: pointer;
+        }
+
+        #BtnSpecial {
+            background-color: #FBBF23;
+        }
+    }
+}
